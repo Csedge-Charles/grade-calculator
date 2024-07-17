@@ -7,19 +7,61 @@ app = Flask(__name__)
 
 def hello():
     if request.method == 'POST':
-        grade1 = float(request.form['firstrow'])
-        grade2 = float(request.form['secondrow'])
-        grade3 = float(request.form['thirdrow'])
-        grade4 = float(request.form['fourthrow'])
-        grade5 = float(request.form['fifthrow'])
-        grade6 = float(request.form['sixthrow'])
+
+        grade1 = request.form['firstrow']
+        grade2 = request.form['secondrow']
+        grade3 = request.form['thirdrow']
+        grade4 = request.form['fourthrow']
+        grade5 = request.form['fifthrow']
+        grade6 = request.form['sixthrow']
         
-        weight1 = float(request.form['firstweight'])
-        weight2 = float(request.form['secondweight'])
-        weight3 = float(request.form['thirdweight'])
-        weight4 = float(request.form['fourthweight'])
-        weight5 = float(request.form['fifthweight'])
-        weight6 = float(request.form['sixthweight'])
+        weight1 = request.form['firstweight']
+        weight2 = request.form['secondweight']
+        weight3 = request.form['thirdweight']
+        weight4 = request.form['fourthweight']
+        weight5 = request.form['fifthweight']
+        weight6 = request.form['sixthweight']
+
+        if grade1 == '':
+            grade1 = 0
+        if grade2 == '':
+            grade2 = 0
+        if grade3 == '':
+            grade3 = 0
+        if grade4 == '':
+            grade4 = 0
+        if grade5 == '':
+            grade5 = 0
+        if grade6 == '':
+            grade6 = 0
+        if weight1 == '':
+            weight1 = 0
+        if weight2 == '':
+            weight2 = 0
+        if weight3 == '':
+            weight3 = 0
+        if weight4 == '':
+            weight4 = 0
+        if weight5 == '':
+            weight5 = 0
+        if weight6 == '':
+            weight6 = 0
+        
+        grade1 = float(grade1)
+        grade2 = float(grade2)
+        grade3 = float(grade3)
+        grade4 = float(grade4)
+        grade5 = float(grade5)
+        grade6 = float(grade6)
+
+        weight1 = float(weight1)
+        weight2 = float(weight2)
+        weight3 = float(weight3)
+        weight4 = float(weight4)
+        weight5 = float(weight5)
+        weight6 = float(weight6)
+
+
         
         final_grade = func.grade_calculator(grade1, weight1, grade2, weight2, grade3, weight3, grade4, weight4, grade5, weight5, grade6, weight6, 0, 0)
         
@@ -62,4 +104,4 @@ def hello():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80, debug=True)
+    app.run(host='0.0.0.0', port=82, debug=True)
