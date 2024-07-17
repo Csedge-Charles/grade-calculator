@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/styles/styles.css"/>
+</head>
+<body>
+    <div id="head">
+        <h1 id="headtext">Grade Calculator</h1>
+    </div>
+
+    <div id="inputbackground">
+        
+    </div>
+        
+    <div id="gradeset">
+        <div id="Titletext">
+            <h2>Input Percentages</h2>
+        </div>
+        <form action="{{ url }}" method="POST">
+            <div id="first">
+                
+                <h2 id="grade">grade</h2>
+                <h2 id="weight">weight</h2>
+                <input type="text" class="firstrow" name="firstrow">
+                <input type="text" class="firstrow" name="firstweight">
+            </div>
+            <div id="second">
+                <input type="text" class="secondrow" name="secondrow">
+                <input type="text" class="secondrow" name="secondweight">
+            </div>
+
+            <div id="third">
+                <input type="text" class="thirdrow" name="thirdrow">
+                <input type="text" class="thirdrow" name="thirdweight">
+            </div>
+
+            <div id="fourth">
+                <input type="text" class="fourthrow" name="fourthrow">
+                <input type="text" class="fourthrow" name="fourthweight">
+            </div>
+
+            <div id="fifth">
+                <input type="text" class="fifthrow" name="fifthrow">
+                <input type="text" class="fifthrow" name="fifthweight">
+            </div>
+
+            <div id="sixth">
+                <input type="text" class="sixthrow" name="sixthrow">
+                <input type="text" class="sixthrow" name="sixthweight">
+            </div>
+
+
+            <input type="submit" value="Calculate" id="submit">
+            
+            
+        </form>
+
+        <h2 id="answer">Final Grade: </h2>
+        <div id="answer-box">
+
+        </div>
+        <h3 id="result">{{ result }}</h3>
+    </div>
+
+       
+    </div>
+
+    
+
+
+</body>
+</html>

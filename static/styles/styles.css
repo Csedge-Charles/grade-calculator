@@ -1,0 +1,112 @@
+
+#head{
+    display: flex;
+    background-color: rgb(255, 241, 224);
+    border: 0px;
+}
+
+#headtext{
+    transform: translate(80%, 0%);
+}
+
+
+#inputbackground{
+    background-color:beige;
+    height: 1200px;
+    width: 500px;
+    transform: translate(10%, 10%);
+    
+}
+
+#Titletext{
+    color:rgb(0, 0, 0);
+    transform: translate(130%, -5%);
+}
+.firstrow{
+    height:30px;
+    border-color: black;
+    border-radius: 5%;
+}
+
+.secondrow{
+    height:30px;
+    border-color: rgb(0, 0, 0);
+    transform: translate(0%, 20%);
+    border-radius: 5%;
+}
+
+.thirdrow{
+    height:30px;
+    border-color: black;
+    transform: translate(0%, 40%);
+    border-radius: 5%;
+}
+
+.fourthrow{
+    height:30px;
+    border-color: black;
+    transform: translate(0%, 60%);
+    border-radius: 5%;
+}
+
+.fifthrow{
+    height:30px;
+    border-color: black;
+    transform: translate(0%, 80%);
+    border-radius: 5%;
+}
+
+.sixthrow{
+    height:30px;
+    border-color: black;
+    transform: translate(0%, 100%);
+    border-radius: 5%;
+}
+
+.seventhow{
+    height:30px;
+    border-color: black;
+    transform: translate(0%, 120%);
+    border-radius: 5%;
+}
+
+#submit{
+    height:30px;
+    width: 300px;
+    transform: translate(0%, 43px);
+}
+
+#grade{
+    transform: translate(15%, 200%)
+}
+
+
+#weight{
+    transform: translate(63%, 30%)
+}
+
+#answer{
+    transform:translate(-225%, 120%)
+}
+
+#answer-box{
+    background-color: rgb(255, 255, 255);
+    border-style:ridge;
+    border-color: black;
+    height: 25px;
+    width: 86px;
+    transform:translate(-470%, 1550%)
+}
+
+#result{
+    transform:translate(-500px, 465px)
+}
+
+#gradeset{
+    display: flex;
+    flex-wrap: wrap;
+    transform:translate(-3%, -270%)
+}
+
+
+
