@@ -6,7 +6,7 @@
 }
 
 #headtext{
-    transform: translate(80%, 0%);
+    transform: translate(430px, 0px);
 }
 
 
@@ -14,13 +14,13 @@
     background-color:beige;
     height: 1200px;
     width: 500px;
-    transform: translate(10%, 10%);
+    transform: translate(300px, 120px);
     
 }
 
 #Titletext{
     color:rgb(0, 0, 0);
-    transform: translate(130%, -5%);
+    transform: translate(450px, -1050px);
 }
 .firstrow{
     height:30px;
@@ -73,20 +73,20 @@
 #submit{
     height:30px;
     width: 300px;
-    transform: translate(0%, 43px);
+    transform: translate(0px, 43px);
 }
 
 #grade{
-    transform: translate(15%, 200%)
+    transform: translate(190px, 55px)
 }
 
 
 #weight{
-    transform: translate(63%, 30%)
+    transform: translate(40px, 10px)
 }
 
 #answer{
-    transform:translate(-225%, 125%)
+    transform:translate(400px, -980px)
 }
 
 #answer-box{
@@ -95,7 +95,7 @@
     border-color: black;
     height: 25px;
     width: 86px;
-    transform:translate(-430px, 470px)
+    transform:translate(540px, -972px)
 }
 
 #letter-box{
@@ -104,20 +104,21 @@
     width: 86px;
     border-color: black;
     border-style: ridge;
-    transform: translate(-400px, 470px);
+    transform: translate(400px, -1001px);
 }
 #letter{
-    transform: translate(-510px, 455px);
+    transform: translate(435px, -1082px);
 }
 #result{
-    transform:translate(-590px, 455px)
+    transform:translate(565px, -1042px)
 }
 
 #gradeset{
-    display: flex;
-    flex-wrap: wrap;
-    transform:translate(-3%, -270%)
+    transform:translate(0px, 0px)
 }
 
 
 
+#whole{
+    transform: translate(400px, -1050px);
+}
