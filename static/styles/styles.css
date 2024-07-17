@@ -86,7 +86,7 @@
 }
 
 #answer{
-    transform:translate(-225%, 130%)
+    transform:translate(-225%, 125%)
 }
 
 #answer-box{
@@ -95,7 +95,7 @@
     border-color: black;
     height: 25px;
     width: 86px;
-    transform:translate(-470%, 1550%)
+    transform:translate(-430px, 470px)
 }
 
 #letter-box{
@@ -104,13 +104,13 @@
     width: 86px;
     border-color: black;
     border-style: ridge;
-    transform: translate(-400%, 1550%);
+    transform: translate(-400px, 470px);
 }
 #letter{
-    transform: translate(-464px, 468px);
+    transform: translate(-510px, 455px);
 }
 #result{
-    transform:translate(-590px, 468px)
+    transform:translate(-590px, 455px)
 }
 
 #gradeset{

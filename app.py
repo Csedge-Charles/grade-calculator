@@ -58,7 +58,7 @@ def hello():
         
     
         
-        return render_template('index.html', result=str(final_grade), letter=letter)
+        return render_template('index.html', result=str(final_grade) + '%', letter=letter)
     return render_template('index.html')
 
 if __name__ == '__main__':
