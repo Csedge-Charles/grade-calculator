@@ -64,7 +64,7 @@ def hello():
 
         
         final_grade = func.grade_calculator(grade1, weight1, grade2, weight2, grade3, weight3, grade4, weight4, grade5, weight5, grade6, weight6, 0, 0)
-        
+        laughing = False
         letter = ''
         if final_grade == 100:
             letter = 'A+'
@@ -96,11 +96,14 @@ def hello():
             
         if final_grade < 60:
             letter = 'F'
+        
+        if final_grade < 80:
+            laughing = True
             
         
     
         
-        return render_template('index.html', result=str(final_grade) + '%', letter=letter)
+        return render_template('index.html', result=str(final_grade) + '%', letter=letter, laugh=laughing)
     return render_template('index.html')
 
 if __name__ == '__main__':
