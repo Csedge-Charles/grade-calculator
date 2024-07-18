@@ -21,6 +21,19 @@ def hello():
         weight4 = request.form['fourthweight']
         weight5 = request.form['fifthweight']
         weight6 = request.form['sixthweight']
+        
+        value1 = grade1
+        value2 = weight1
+        value3 = grade2
+        value4 = weight2
+        value5 = grade3
+        value6 = weight3
+        value7 = grade4
+        value8 = weight4
+        value9 = grade5
+        value10 = weight5
+        value11 = grade6
+        value12 = weight6
 
         if grade1 == '':
             grade1 = 0
@@ -103,7 +116,10 @@ def hello():
         
     
         
-        return render_template('index.html', result=str(final_grade) + '%', letter=letter, laugh=laughing)
+        return render_template('index.html', result=str(final_grade) + '%', letter=letter, laugh=laughing,
+                               value1=value1, value2=value2, value3=value3, value4=value4, value5=value5,
+                               value6=value6, value7=value7, value8=value8, value9=value9, value10=value10, value11=value11,
+                               value12=value12)
     return render_template('index.html')
 
 if __name__ == '__main__':
