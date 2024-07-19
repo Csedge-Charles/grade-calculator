@@ -18,6 +18,13 @@
     
 }
 
+#back{
+    transform: translate(30px, -1270px);
+    width: 80px;
+    background-color: bisque;
+    border-color: bisque;
+}
+
 #calc{
     width: 200px;
     transform: translate(900px, -1260px);

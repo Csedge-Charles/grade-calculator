@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for
+from flask import Flask, render_template, request, url_for, redirect
 import func
 
 app = Flask(__name__)
@@ -9,9 +9,9 @@ app = Flask(__name__)
 def homepage():
     if request.method == 'POST':
         if request.form['gradegpa'] == 'Grade Calculator':
-            return render_template('gradecalc.html')
+            return redirect('/Grade-Calculator', code=302)
         if request.form['gradegpa'] == 'GPA Calculator':
-            return render_template('gpa.html')
+            return redirect('/gpa', code=302)
     return render_template('index.html')
 
 
@@ -20,7 +20,6 @@ def homepage():
 
 def hello():
     if request.method == 'POST':
-
         grade1 = request.form['firstrow']
         grade2 = request.form['secondrow']
         grade3 = request.form['thirdrow']
@@ -137,6 +136,7 @@ def hello():
 
 @app.route('/gpa', methods=['POST', 'GET'])
 def gpa():
+
     if request.method == 'POST':
         grade1 = str(request.form['firstrow'])
         value1 = grade1
