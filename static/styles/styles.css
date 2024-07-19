@@ -1,4 +1,7 @@
 
+
+
+
 #head{
     display: flex;
     background-color: rgb(255, 241, 224);
@@ -7,6 +10,26 @@
 
 #headtext{
     transform: translate(430px, 0px);
+}
+
+
+#calc{
+    width: 200px;
+    transform: translate(900px, -1260px);
+    height:50px;
+    background-color: bisque;
+    border-color: bisque;
+}
+
+
+
+
+#calculate{
+    width: 200px;
+    transform: translate(1004px, -1260px);
+    height:50px;
+    background-color: bisque;
+    border-color: bisque;
 }
 
 

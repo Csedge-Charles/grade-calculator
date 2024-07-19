@@ -18,6 +18,23 @@
     
 }
 
+#calc{
+    width: 200px;
+    transform: translate(900px, -1260px);
+    height:50px;
+    background-color: bisque;
+    border-color: bisque;
+}
+
+
+#calculate{
+    width: 200px;
+    transform: translate(1004px, -1260px);
+    height:50px;
+    background-color: bisque;
+    border-color: bisque;
+}
+
 #Titletext{
     color:rgb(0, 0, 0);
     transform: translate(450px, -1050px);
