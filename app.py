@@ -3,7 +3,20 @@ import func
 
 app = Flask(__name__)
 
-@app.route('/', methods=['POST', 'GET'])
+@app.route('/', methods=['GET', 'POST'])
+
+
+def homepage():
+    if request.method == 'POST':
+        if request.form['gradegpa'] == 'Grade Calculator':
+            return render_template('gradecalc.html')
+        if request.form['gradegpa'] == 'GPA Calculator':
+            return render_template('gpa.html')
+    return render_template('index.html')
+
+
+
+@app.route('/Grade-Calculator', methods=['POST', 'GET'])
 
 def hello():
     if request.method == 'POST':
@@ -116,11 +129,45 @@ def hello():
         
     
         
-        return render_template('index.html', result=str(final_grade) + '%', letter=letter, laugh=laughing,
+        return render_template('gradecalc.html', result=str(final_grade) + '%', letter=letter, laugh=laughing,
                                value1=value1, value2=value2, value3=value3, value4=value4, value5=value5,
                                value6=value6, value7=value7, value8=value8, value9=value9, value10=value10, value11=value11,
                                value12=value12)
-    return render_template('index.html')
+    return render_template('gradecalc.html')
+
+@app.route('/gpa', methods=['POST', 'GET'])
+def gpa():
+    if request.method == 'POST':
+        grade1 = str(request.form['firstrow'])
+        value1 = grade1
+        grade2 = str(request.form['secondrow'])
+        value2 = grade2
+        grade3 = str(request.form['thirdrow'])
+        value3 = grade3
+        grade4 = str(request.form['fourthrow'])
+        value4 = grade4
+        grade5 = str(request.form['fifthrow'])
+        value5 = grade5
+        grade6 = str(request.form['sixthrow'])
+        value6 = grade6
+        grade7 = str(request.form['seventhrow'])
+        value7 = grade7
+        grade8 = str(request.form['eighthrow'])
+        value8 = grade8
+        grade9 = str(request.form['ninethrow'])
+        value9 = grade9
+        grade10 = str(request.form['tenthrow'])
+        value10 = grade10
+        
+        laugh = False
+        final = func.gpa(grade1, grade2, grade3, grade4, grade5, grade6, grade7, grade8, grade9, grade10)
+        if final < 3.5:
+            laugh = True
+        return render_template('gpa.html', gpa=str(final), laugh=laugh,
+                        value1=value1, value2=value2, value3=value3, value4=value4, value5=value5, value6=value6,
+                         value7=value7, value8=value8, value9=value9, value10=value10)
+    else:
+        return render_template('gpa.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=82, debug=True)

@@ -1,0 +1,157 @@
+
+#head{
+    display: flex;
+    background-color: rgb(255, 241, 224);
+    border: 0px;
+}
+
+#headtext{
+    transform: translate(430px, 0px);
+}
+
+
+#inputbackground{
+    background-color:beige;
+    height: 1200px;
+    width: 500px;
+    transform: translate(300px, 120px);
+    
+}
+
+#Titletext{
+    color:rgb(0, 0, 0);
+    transform: translate(450px, -1050px);
+}
+.firstrow{
+    height:30px;
+    width: 294px;
+    border-color: black;
+    border-radius: 5%;
+}
+
+.secondrow{
+    height:30px;
+    width: 294px;
+    border-color: rgb(0, 0, 0);
+    transform: translate(0%, 20%);
+    border-radius: 5%;
+}
+
+.thirdrow{
+    height:30px;
+    width: 294px;
+    border-color: black;
+    transform: translate(0%, 40%);
+    border-radius: 5%;
+}
+
+.fourthrow{
+    height:30px;
+    width: 294px;
+    border-color: black;
+    transform: translate(0%, 60%);
+    border-radius: 5%;
+}
+
+.fifthrow{
+    height:30px;
+    width: 294px;
+    border-color: black;
+    transform: translate(0%, 80%);
+    border-radius: 5%;
+}
+
+.sixthrow{
+    height:30px;
+    width: 294px;
+    border-color: black;
+    transform: translate(0%, 100%);
+    border-radius: 5%;
+}
+
+.seventhrow{
+    height:30px;
+    width: 294px;
+    border-color: black;
+    transform: translate(-3%, 100%);
+    border-radius: 4%;
+    margin:10px;
+}
+
+.eighthrow{
+    height:30px;
+    width: 294px;
+    border-color: black;
+    transform: translate(-1%, 80%);
+    border-radius: 4%;
+    margin:4px;
+}
+
+.ninethrow{
+    height:30px;
+    width: 294px;
+    border-color: black;
+    transform: translate(-1%, 80%);
+    border-radius: 4%;
+    margin:4px;
+}
+
+.tenthrow{
+    height:30px;
+    width: 294px;
+    border-color: black;
+    transform: translate(-1%, 80%);
+    border-radius: 4%;
+    margin:4px;
+}
+
+#submit{
+    height:30px;
+    width: 300px;
+    transform: translate(0px, 43px);
+}
+
+#grade{
+    transform: translate(190px, 55px)
+}
+
+
+#weight{
+    transform: translate(40px, 10px)
+}
+
+#answer{
+    transform:translate(400px, -980px)
+}
+
+
+
+#letter-box{
+    background-color: rgb(255, 255, 255);
+    height: 25px;
+    width: 180px;
+    border-width:1.5px;
+    border-style: solid;
+    border-color: black;
+    transform: translate(400px, -1001px);
+}
+#letter{
+    transform: translate(475px, -1042px);
+}
+
+
+#gradeset{
+    transform:translate(0px, 0px)
+}
+
+
+
+#whole{
+    transform: translate(400px, -1010px);
+}
+
+#laughing{
+    transform: translate(850px, -1705px);
+}
+
+

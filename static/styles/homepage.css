@@ -1,0 +1,23 @@
+#head{
+    display: flex;
+    background-color: rgb(255, 241, 224);
+    border: 0px;
+}
+
+#headtext{
+    transform: translate(430px, 0px);
+}
+
+#calc{
+    transform: translate(900px, -585px);
+    height:50px;
+    background-color: bisque;
+    border-color: bisque;
+}
+
+#calculate{
+    transform: translate(950px, -585px);
+    height:50px;
+    background-color: bisque;
+    border-color: bisque;
+}
