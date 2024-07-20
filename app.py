@@ -8,11 +8,13 @@ app = Flask(__name__)
 
 def homepage():
     if request.method == 'POST':
+        if request.form['gradegpa'] == 'Sign In':
+            return redirect('/email', code=302)
         if request.form['gradegpa'] == 'Grade Calculator':
             return redirect('/Grade-Calculator', code=302)
         if request.form['gradegpa'] == 'GPA Calculator':
             return redirect('/gpa', code=302)
-    return render_template('index.html')
+    return render_template('index.html', sign=True)
 
 
 
@@ -159,15 +161,67 @@ def gpa():
         grade10 = str(request.form['tenthrow'])
         value10 = grade10
         
+        
+        weight1 = str(request.form['weight1'])
+        weight2 = str(request.form['weight2'])
+        weight3 = str(request.form['weight3'])
+        weight4 = str(request.form['weight4'])
+        weight5 = str(request.form['weight5'])
+        weight6 = str(request.form['weight6'])
+        weight7 = str(request.form['weight7'])
+        weight8 = str(request.form['weight8'])
+        weight9 = str(request.form['weight9'])
+        weight10 = str(request.form['weight10'])
+        
+        weight_list = [weight1, weight2, weight3, weight4, weight5,
+                       weight6, weight7, weight8, weight9, weight10]
+        
+        grade_list = [grade1, grade2, grade3, grade4, grade5,
+                      grade6, grade7, grade8, grade9, grade10]
+        weighted_gpa = func.weighted(grade_list, weight_list)
+        
         laugh = False
         final = func.gpa(grade1, grade2, grade3, grade4, grade5, grade6, grade7, grade8, grade9, grade10)
         if final < 3.5:
             laugh = True
         return render_template('gpa.html', gpa=str(final), laugh=laugh,
                         value1=value1, value2=value2, value3=value3, value4=value4, value5=value5, value6=value6,
-                         value7=value7, value8=value8, value9=value9, value10=value10)
+                         value7=value7, value8=value8, value9=value9, value10=value10, weighted=weighted_gpa)
     else:
         return render_template('gpa.html')
+    
+    
+
+@app.route('/email', methods=['POST', 'GET'])
+
+def email():
+    if request.method == 'POST':
+        return redirect('/password', code=302)
+    return render_template('email.html')
+
+
+@app.route('/password', methods=['POST', 'GET'])
+
+def password():
+    if request.method == 'POST':
+        if request.form['password'] == 'google':
+            return redirect('/home', code=302)
+        else:
+            return render_template('password.html', wrong='Password incorrect', reset=request.form['password'])
+    return render_template('password.html', wrong='')
+
+@app.route('/home', methods=['POST', 'GET'])
+
+def home():
+    if request.method == 'POST':
+        if request.form['gradegpa'] == 'Grade Calculator':
+            return redirect('/Grade-Calculator', code=302)
+        if request.form['gradegpa'] == 'GPA Calculator':
+            return redirect('/gpa', code=302)
+    return render_template('index.html', sign=False)
+
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=82, debug=True)

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/styles/email.css"
+</head>
+<body style="background-color: rgb(255, 238, 218)">
+    
+    <div id="Whitebox">
+
+    </div>
+    <div style="font-family: Arial;">
+        <p id="forgot" style="font-size: 15x">Forgot email?</p>
+        <p id="phone" style="font-size: 25px;">Email or phone</p>
+    <p id="signin" style="font-size: 60px;">Sign in</p>
+    </div>
+
+
+    <form action="{{ url }}" method="POST">
+        <input type="text" name="email" id="email" style="font-size: 25px;">
+        <input type="submit" name="submit" id="submit" value="Next">
+    </form>
+
+</body>
+</html>

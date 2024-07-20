@@ -47,5 +47,53 @@ def gpa(grade1, grade2, grade3, grade4, grade5, grade6, grade7, grade8, grade9, 
             overall += 0
     return two_decimal_places(overall/amount)
         
+
+def weighted(gradelist, weightlist):
+    amount = 0
+    overall = 0
+    for i in range(len(gradelist)):
+        if 'P' in weightlist[i]:
+            overall += 1
+        if weightlist[i] == 'Honors':
+            overall += 0.5
         
+        i = gradelist[i]
         
+        if i == 'A':
+            amount += 1
+            overall += 4.0
+        if i == 'A-':
+            amount += 1
+            overall += 3.7
+        if i == 'B+':
+            amount += 1
+            overall += 3.3
+        if i == 'B':
+            amount += 1
+            overall += 3.0
+        if i == 'B-':
+            amount += 1
+            overall += 2.7
+        if i == 'C+':
+            amount += 1
+            overall += 2.3
+        if i == 'C':
+            amount += 1
+            overall += 2.0
+        if i == 'C-':
+            amount += 1
+            overall += 1.7
+        if i == 'D+':
+            amount += 1
+            overall += 1.0
+        if i == 'D':
+            amount += 1
+            overall += 1.0
+        if i == 'D-' or i == 'F':
+            amount += 1
+            overall += 0
+    return two_decimal_places(overall/amount)
+
+
+
+

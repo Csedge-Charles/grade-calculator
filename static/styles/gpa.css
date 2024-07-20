@@ -18,29 +18,77 @@
     
 }
 
-#back{
-    transform: translate(30px, -1270px);
-    width: 80px;
-    background-color: bisque;
-    border-color: bisque;
-}
-
-#calc{
-    width: 200px;
-    transform: translate(900px, -1260px);
-    height:50px;
-    background-color: bisque;
-    border-color: bisque;
-}
 
 
-#calculate{
-    width: 200px;
-    transform: translate(1004px, -1260px);
-    height:50px;
-    background-color: bisque;
-    border-color: bisque;
+#weight1{
+    -webkit-appearance:menulist-button;
+    height: 35px;
+    width: 100px;
 }
+
+#weight2{
+    -webkit-appearance:menulist-button;
+    transform: translate(0px, 12px);
+    height: 35px;
+    width: 100px;
+}
+
+#weight3{
+    -webkit-appearance:menulist-button;
+    transform: translate(0px, 24px);
+    height: 35px;
+    width: 100px;
+}
+
+#weight4{
+    -webkit-appearance:menulist-button;
+    transform: translate(0px, 36px);
+    height: 35px;
+    width: 100px;
+}
+
+#weight5{
+    -webkit-appearance:menulist-button;
+    transform: translate(0px, 48px);
+    height: 35px;
+    width: 100px;
+}
+
+#weight6{
+    -webkit-appearance:menulist-button;
+    transform: translate(0px, 60px);
+    height: 35px;
+    width: 100px;
+}
+
+#weight7{
+    -webkit-appearance:menulist-button;
+    transform: translate(0px, 72px);
+    height: 35px;
+    width: 100px;
+}
+
+#weight8{
+    -webkit-appearance:menulist-button;
+    transform: translate(0px, 84px);
+    height: 35px;
+    width: 100px;
+}
+
+#weight9{
+    -webkit-appearance:menulist-button;
+    transform: translate(0px, 96px);
+    height: 35px;
+    width: 100px;
+}
+
+#weight10{
+    -webkit-appearance:menulist-button;
+    transform: translate(-104px, 144px);
+    height: 35px;
+    width: 100px;
+}
+
 
 #Titletext{
     color:rgb(0, 0, 0);
@@ -48,91 +96,88 @@
 }
 .firstrow{
     height:30px;
-    width: 294px;
+    width: 144px;
+    transform: translate(50px, 0px);
     border-color: black;
     border-radius: 5%;
 }
 
 .secondrow{
     height:30px;
-    width: 294px;
+    width: 144px;
     border-color: rgb(0, 0, 0);
-    transform: translate(0%, 20%);
+    transform: translate(50px, 12px);
     border-radius: 5%;
 }
 
 .thirdrow{
     height:30px;
-    width: 294px;
+    width: 144px;
     border-color: black;
-    transform: translate(0%, 40%);
+    transform: translate(50px, 24px);
     border-radius: 5%;
 }
 
 .fourthrow{
     height:30px;
-    width: 294px;
+    width: 144px;
     border-color: black;
-    transform: translate(0%, 60%);
+    transform: translate(50px, 36px);
     border-radius: 5%;
 }
 
 .fifthrow{
     height:30px;
-    width: 294px;
+    width: 144px;
     border-color: black;
-    transform: translate(0%, 80%);
+    transform: translate(50px, 48px);
     border-radius: 5%;
 }
 
 .sixthrow{
     height:30px;
-    width: 294px;
+    width: 144px;
     border-color: black;
-    transform: translate(0%, 100%);
+    transform: translate(50px, 60px);
     border-radius: 5%;
 }
 
 .seventhrow{
     height:30px;
-    width: 294px;
+    width: 144px;
     border-color: black;
-    transform: translate(-3%, 100%);
-    border-radius: 4%;
-    margin:10px;
+    transform: translate(50px, 72px);
+    border-radius: 5%;
 }
 
 .eighthrow{
     height:30px;
-    width: 294px;
+    width: 144px;
     border-color: black;
-    transform: translate(-1%, 80%);
-    border-radius: 4%;
-    margin:4px;
+    transform: translate(50px, 84px);
+    border-radius: 5%;
 }
 
 .ninethrow{
     height:30px;
-    width: 294px;
+    width: 144px;
     border-color: black;
-    transform: translate(-1%, 80%);
-    border-radius: 4%;
-    margin:4px;
+    transform: translate(-54px, 96px);
+    border-radius: 5%;
 }
 
 .tenthrow{
     height:30px;
-    width: 294px;
+    width: 144px;
     border-color: black;
-    transform: translate(-1%, 80%);
-    border-radius: 4%;
-    margin:4px;
+    transform: translate(153px, 108px);
+    border-radius: 5%;
 }
 
 #submit{
     height:30px;
     width: 300px;
-    transform: translate(0px, 43px);
+    transform: translate(0px, 123px);
 }
 
 #grade{
@@ -145,7 +190,7 @@
 }
 
 #answer{
-    transform:translate(400px, -980px)
+    transform:translate(400px, -894px)
 }
 
 
@@ -153,16 +198,31 @@
 #letter-box{
     background-color: rgb(255, 255, 255);
     height: 25px;
-    width: 180px;
+    width: 90px;
     border-width:1.5px;
     border-style: solid;
     border-color: black;
-    transform: translate(400px, -1001px);
-}
-#letter{
-    transform: translate(475px, -1042px);
+    transform: translate(400px, -901px);
 }
 
+
+#letter-box2{
+    background-color: rgb(255, 255, 255);
+    height: 25px;
+    width: 90px;
+    border-width:1.5px;
+    border-style: solid;
+    border-color: black;
+    transform: translate(530px, -929px);
+}
+
+#letter{
+    transform: translate(410px, -973px);
+}
+
+#letter2{
+    transform: translate(540px, -1013px);
+}
 
 #gradeset{
     transform:translate(0px, 0px)
