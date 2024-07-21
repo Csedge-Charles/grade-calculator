@@ -16,19 +16,19 @@
 #username{
     width:500px;
     height:40px;
-    transform: translate(550px, -700px);
+    transform: translate(550px, -730px);
 }
 
 #email{
     width:500px;
     height:40px;
-    transform: translate(39px, -600px);
+    transform: translate(550px, -670px);
 }
 
 #password{
     width:500px;
     height:40px;
-    transform: translate(-472px, -500px);
+    transform: translate(550px, -617px);
 }
 
 #usertext{
@@ -52,11 +52,11 @@
     color:white;
     width: 100px;
     height: 40px;
-    transform: translate(-985px, -430px);
+    transform: translate(550px, -580px);
     border-radius: 20%;
 }
 
 #reject{
     color:red;
-    transform: translate(553px, -645px);
+    transform: translate(553px, -770px);
 }

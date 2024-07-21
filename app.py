@@ -199,7 +199,7 @@ def email():
     if request.method == 'POST':
         if request.form['submit'] == 'Create account':
             return redirect('/create-account', code=302)
-        return render_template('email.html', reject='Email does not exist')
+        return render_template('email.html', reject='Email does not exist', email=request.form['email'])
     
     return render_template('email.html', reject='')
 
@@ -213,10 +213,10 @@ def create():
         username = request.form['username']
         email = request.form['email']
         password = request.form['password']
-        if '@' in  email and '.' in email:
+        if '@gradepro.org' in  email:
             return redirect('/email-success', code=302)
         else:
-            return render_template('create.html', wrong='Invalid email address')
+            return render_template('create.html', wrong='Invalid email address', email=email, password=password, username=username)
     return render_template('create.html', wrong='')
 
 
@@ -229,7 +229,7 @@ def success():
             return redirect('/create-account', code=302)
         if request.form['email'] == email:
             return redirect('/password', code=302)
-        return render_template('email.html', reject='Email does not exist')
+        return render_template('email.html', reject='Email does not exist', email=request.form['email'])
     return render_template('email.html', reject='')
         
     
@@ -238,7 +238,7 @@ def success():
 
 def password():
     if request.method == 'POST':
-        if request.form['password'] == 'google':
+        if request.form['password'] == password:
             return redirect('/home', code=302)
         else:
             return render_template('password.html', wrong='Password incorrect', reset=request.form['password'])
@@ -252,7 +252,7 @@ def home():
             return redirect('/Grade-Calculator', code=302)
         if request.form['gradegpa'] == 'GPA Calculator':
             return redirect('/gpa', code=302)
-    return render_template('index.html', sign=False)
+    return render_template('index.html', sign=False, user=username)
 
 
 

@@ -40,6 +40,14 @@
     border-color: bisque;
 }
 
+#welcome{
+    transform: translate(140px, -746px);
+}
+
+#user{
+    transform: translate(140px, -758px);
+}
+
 #calc{
     width: 200px;
     transform: translate(900px, -670px);

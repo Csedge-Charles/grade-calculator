@@ -12,7 +12,7 @@ def gpa(grade1, grade2, grade3, grade4, grade5, grade6, grade7, grade8, grade9, 
     overall = 0
     amount = 0
     for i in grade_list:
-        if i == 'A':
+        if i == 'A' or i == 'A+':
             amount += 1
             overall += 4.0
         if i == 'A-':

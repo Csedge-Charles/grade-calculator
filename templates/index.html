@@ -21,6 +21,13 @@
         {% if sign == True %}
         <input type="submit" name="gradegpa" value="Sign In" id="signin">
         {% endif%}
+
+        {% if sign == False %}
+        <div style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif" >
+            <p style="font-size: 20px;" id="welcome">Welcome</p>
+            <p style="font-size: 20px;" id="user">{{ user }}</p>
+        </div>
+        {% endif %}
     </form>
 </body>
 </html>
