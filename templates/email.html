@@ -12,7 +12,6 @@
 
     </div>
     <div style="font-family: Arial;">
-        <p id="forgot" style="font-size: 15x">Forgot email?</p>
         <p id="phone" style="font-size: 25px;">Email or phone</p>
     <p id="signin" style="font-size: 60px;">Sign in</p>
     </div>
@@ -21,7 +20,12 @@
     <form action="{{ url }}" method="POST">
         <input type="text" name="email" id="email" style="font-size: 25px;">
         <input type="submit" name="submit" id="submit" value="Next">
+        <input type="submit" name="submit" id="create" value="Create account">
     </form>
+
+    <div style="font-family: Arial;">
+        <p id="reject" style="font-size: 12;">{{ reject }}</p>
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/styles/create.css">
+</head>
+<body style="background-color: rgb(255, 238, 218);">
+        
+    <div id="Whitebox">
+
+    </div>
+
+    <div style="font-family: arial;" id="text">
+        <p style="font-size: 35px;" id="title">Sign Up</p>
+        <p style="font-size: 20;" id="usertext"> Username</p>
+        <p style="font-size: 20;" id="etext"> Email</p>
+        <p style="font-size: 20;" id="passtext"> Password</p>
+    </div>
+
+    <form action="{{ url }}" method="POST" id="whole"> 
+        <input type="text" name="username" id="username" style="font-size: 20px;">
+        <input type="text" name="email" id="email" style="font-size: 20px;">
+        <input type="text" name="password" id="password" style="font-size: 20px;">
+        <input type="submit" name="Create account" id="make">
+    </form>
+
+    <div style="font-family: Arial;">
+        <p id="reject" style="font-size: 12;">{{ wrong }}</p>
+    </div>
+
+
+
+
+    
+</body>
+</html>

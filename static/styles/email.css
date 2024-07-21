@@ -10,6 +10,20 @@
     transform: translate(400px, -200px);
 }
 
+#reject{
+    color:red;
+    transform: translate(1166px, -325px);
+}
+
+#create{
+    background-color: rgb(30, 0, 255);
+    color:rgb(255, 255, 255);
+    width: 125px;
+    height: 40px;
+    transform: translate(400px, -90px);
+    border-radius: 20%;
+}
+
 #email{
     border-color: bisque;
     width: 500px;
