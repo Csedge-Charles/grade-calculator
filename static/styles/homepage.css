@@ -4,6 +4,14 @@
     border: 0px;
 }
 
+#signout{
+    transform: translate(-1000px, -670px);
+    width: 100px;
+    height:50px;
+    background-color: bisque;
+    border-color: bisque;
+}
+
 #headtext{
     transform: translate(430px, 0px);
 }
@@ -42,6 +50,19 @@
 
 #welcome{
     transform: translate(140px, -746px);
+}
+
+#greeting{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {color: red;}
+    25%  {color: rgb(191, 0, 255);}
+    50%  {olor: blue;}
+    100% {color: orange;}
 }
 
 #user{

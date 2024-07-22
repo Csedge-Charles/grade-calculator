@@ -10,14 +10,41 @@
 }
 
 
+
 #inputbackground{
     background-color:beige;
     height: 1200px;
     width: 500px;
-    transform: translate(300px, 120px);
+    transform: translate(600px, 120px);
     
 }
 
+
+
+#calc{
+    width: 200px;
+    transform: translate(820px, -1740px);
+    height:50px;
+    background-color: bisque;
+    border-color: bisque;
+}
+
+#back{
+    transform: translate(30px, -1735px);
+    width: 80px;
+    background-color: bisque;
+    border-color: bisque;
+}
+
+
+
+#calculate{
+    width: 200px;
+    transform: translate(924px, -1740px);
+    height:50px;
+    background-color: bisque;
+    border-color: bisque;
+}
 
 
 #weight1{
@@ -92,7 +119,7 @@
 
 #Titletext{
     color:rgb(0, 0, 0);
-    transform: translate(450px, -1050px);
+    transform: translate(750px, -1050px);
 }
 .firstrow{
     height:30px;
@@ -190,7 +217,7 @@
 }
 
 #answer{
-    transform:translate(400px, -894px)
+    transform:translate(700px, -894px)
 }
 
 
@@ -202,7 +229,7 @@
     border-width:1.5px;
     border-style: solid;
     border-color: black;
-    transform: translate(400px, -901px);
+    transform: translate(700px, -901px);
 }
 
 
@@ -213,15 +240,15 @@
     border-width:1.5px;
     border-style: solid;
     border-color: black;
-    transform: translate(530px, -929px);
+    transform: translate(830px, -929px);
 }
 
 #letter{
-    transform: translate(410px, -973px);
+    transform: translate(710px, -973px);
 }
 
 #letter2{
-    transform: translate(540px, -1013px);
+    transform: translate(840px, -1013px);
 }
 
 #gradeset{
@@ -231,7 +258,7 @@
 
 
 #whole{
-    transform: translate(400px, -1010px);
+    transform: translate(700px, -1010px);
 }
 
 #laughing{

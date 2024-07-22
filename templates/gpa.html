@@ -119,11 +119,17 @@
             <div id="tenth">
                 <input type="text" class="tenthrow" name="tenthrow" value="{{ value10 }}" style="font-size: 15px;">
             </div>
-            <input type="submit" value="Calculate" id="submit">
+            <input type="submit" value="Calculate" id="submit" name="submit">
             
             
         </form>
         </div>
+
+    <form action="{{ url }}" method="POST">
+        <input type="submit" name="submit" value="Back" id="back">
+        <input type="submit" name="submit" value="Grade Calculator" id="calc">
+        <input type="submit" name="submit" value="Gpa Calculator" id="calculate">
+    </form>
         <h2 id="answer">Final GPA: </h2>
         <div id="letter-box">
             

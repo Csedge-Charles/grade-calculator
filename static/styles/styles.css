@@ -14,7 +14,7 @@
 
 
 #back{
-    transform: translate(30px, -1270px);
+    transform: translate(30px, -1790px);
     width: 80px;
     background-color: bisque;
     border-color: bisque;
@@ -23,7 +23,7 @@
 
 #calc{
     width: 200px;
-    transform: translate(900px, -1260px);
+    transform: translate(820px, -1795px);
     height:50px;
     background-color: bisque;
     border-color: bisque;
@@ -34,7 +34,7 @@
 
 #calculate{
     width: 200px;
-    transform: translate(1004px, -1260px);
+    transform: translate(924px, -1795px);
     height:50px;
     background-color: bisque;
     border-color: bisque;
@@ -45,22 +45,24 @@
     background-color:beige;
     height: 1200px;
     width: 500px;
-    transform: translate(300px, 120px);
+    transform: translate(600px, 120px);
     
 }
 
 #Titletext{
     color:rgb(0, 0, 0);
-    transform: translate(450px, -1050px);
+    transform: translate(750px, -1050px);
 }
 .firstrow{
     height:30px;
+    width:150px;
     border-color: black;
     border-radius: 5%;
 }
 
 .secondrow{
     height:30px;
+    width:150px;
     border-color: rgb(0, 0, 0);
     transform: translate(0%, 20%);
     border-radius: 5%;
@@ -68,6 +70,7 @@
 
 .thirdrow{
     height:30px;
+    width:150px;
     border-color: black;
     transform: translate(0%, 40%);
     border-radius: 5%;
@@ -75,6 +78,7 @@
 
 .fourthrow{
     height:30px;
+    width:150px;
     border-color: black;
     transform: translate(0%, 60%);
     border-radius: 5%;
@@ -82,6 +86,7 @@
 
 .fifthrow{
     height:30px;
+    width:150px;
     border-color: black;
     transform: translate(0%, 80%);
     border-radius: 5%;
@@ -89,12 +94,14 @@
 
 .sixthrow{
     height:30px;
+    width:150px;
     border-color: black;
     transform: translate(0%, 100%);
     border-radius: 5%;
 }
 
 .seventhow{
+    width:150px;
     height:30px;
     border-color: black;
     transform: translate(0%, 120%);
@@ -103,7 +110,7 @@
 
 #submit{
     height:30px;
-    width: 387px;
+    width: 315px;
     transform: translate(0px, 43px);
 }
 
@@ -117,7 +124,7 @@
 }
 
 #answer{
-    transform:translate(400px, -980px)
+    transform:translate(700px, -980px)
 }
 
 #answer-box{
@@ -127,7 +134,7 @@
     height: 25px;
     width: 86px;
     border-style: solid;
-    transform:translate(540px, -972px)
+    transform:translate(840px, -972px)
 }
 
 #letter-box{
@@ -137,13 +144,13 @@
     border-width:1.5px;
     border-style: solid;
     border-color: black;
-    transform: translate(400px, -1001px);
+    transform: translate(700px, -1001px);
 }
 #letter{
-    transform: translate(435px, -1082px);
+    transform: translate(708px, -1136px);
 }
 #result{
-    transform:translate(565px, -1042px)
+    transform:translate(848px, -1096px)
 }
 
 #gradeset{
@@ -153,7 +160,7 @@
 
 
 #whole{
-    transform: translate(350px, -1050px);
+    transform: translate(700px, -1050px);
 }
 
 #laughing{

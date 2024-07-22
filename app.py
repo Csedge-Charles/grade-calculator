@@ -9,7 +9,7 @@ app = Flask(__name__)
 def homepage():
     if request.method == 'POST':
         if request.form['gradegpa'] == 'Sign In':
-            return redirect('/email', code=302)
+            return redirect('/email', code=302)       
         if request.form['gradegpa'] == 'Grade Calculator':
             return redirect('/Grade-Calculator', code=302)
         if request.form['gradegpa'] == 'GPA Calculator':
@@ -23,6 +23,12 @@ def homepage():
 
 def hello():
     if request.method == 'POST':
+        if request.form['submit'] == 'Back':
+            return redirect('/home', code=302)
+        if request.form['submit'] == 'Gpa Calculator':
+            return redirect('/gpa', code=302)
+        if request.form['submit'] == 'Grade Calculator':
+            return render_template('gradecalc.html')
         grade1 = request.form['firstrow']
         grade2 = request.form['secondrow']
         grade3 = request.form['thirdrow']
@@ -141,6 +147,12 @@ def hello():
 def gpa():
 
     if request.method == 'POST':
+        if request.form['submit'] == 'Back':
+            return redirect('/home', code=302)
+        if request.form['submit'] == 'Grade Calculator':
+            return redirect('/Grade-Calculator', code=302)
+        if request.form['submit'] == 'Gpa Calculator':
+            return render_template('gpa.html')
         grade1 = str(request.form['firstrow'])
         value1 = grade1
         grade2 = str(request.form['secondrow'])
@@ -197,6 +209,9 @@ def gpa():
 
 def email():
     if request.method == 'POST':
+        autofill = ''
+        if request.form['email'] == 'admin':
+            return redirect('/password', code=302)
         if request.form['submit'] == 'Create account':
             return redirect('/create-account', code=302)
         return render_template('email.html', reject='Email does not exist', email=request.form['email'])
@@ -204,6 +219,7 @@ def email():
     return render_template('email.html', reject='')
 
 @app.route('/create-account', methods=['GET', 'POST'])
+
 
 def create():
     if request.method == 'POST':
@@ -213,7 +229,7 @@ def create():
         username = request.form['username']
         email = request.form['email']
         password = request.form['password']
-        if '@gradepro.org' in  email:
+        if func.checker(email):
             return redirect('/email-success', code=302)
         else:
             return render_template('create.html', wrong='Invalid email address', email=email, password=password, username=username)
@@ -238,6 +254,10 @@ def success():
 
 def password():
     if request.method == 'POST':
+        if request.form['password'] == 'admin':
+            global username
+            username = 'Admin'
+            return redirect('/home', code=302)
         if request.form['password'] == password:
             return redirect('/home', code=302)
         else:
@@ -252,6 +272,8 @@ def home():
             return redirect('/Grade-Calculator', code=302)
         if request.form['gradegpa'] == 'GPA Calculator':
             return redirect('/gpa', code=302)
+        if request.form['gradegpa'] == 'Sign out':
+            return redirect('/email', code=302)
     return render_template('index.html', sign=False, user=username)
 
 
