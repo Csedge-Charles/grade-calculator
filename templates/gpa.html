@@ -19,6 +19,12 @@
         
         </div>
 
+        <form action="{{ url }}" method="POST" id="buttons">
+            <input type="submit" name="submit" value="Back" id="back">
+            <input type="submit" name="submit" value="Grade Calculator" id="calc">
+            <input type="submit" name="submit" value="Gpa Calculator" id="calculate">
+        </form>
+
 
 
         
@@ -125,11 +131,6 @@
         </form>
         </div>
 
-    <form action="{{ url }}" method="POST">
-        <input type="submit" name="submit" value="Back" id="back">
-        <input type="submit" name="submit" value="Grade Calculator" id="calc">
-        <input type="submit" name="submit" value="Gpa Calculator" id="calculate">
-    </form>
         <h2 id="answer">Final GPA: </h2>
         <div id="letter-box">
             
@@ -144,6 +145,7 @@
 
        
     </div>
+
 
     
 

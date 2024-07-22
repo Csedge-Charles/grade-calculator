@@ -30,7 +30,7 @@
 }
 
 #back{
-    transform: translate(30px, -1730px);
+    transform: translate(30px, -1725px);
     width: 80px;
     background-color: bisque;
     border-color: bisque;
@@ -183,6 +183,10 @@
     border-color: black;
     transform: translate(50px, 84px);
     border-radius: 5%;
+}
+
+#buttons{
+    transform: translate(0px, 467px);
 }
 
 .ninethrow{
