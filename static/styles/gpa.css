@@ -23,14 +23,14 @@
 
 #calc{
     width: 200px;
-    transform: translate(820px, -1740px);
+    transform: translate(820px, -1730px);
     height:50px;
     background-color: bisque;
     border-color: bisque;
 }
 
 #back{
-    transform: translate(30px, -1735px);
+    transform: translate(30px, -1730px);
     width: 80px;
     background-color: bisque;
     border-color: bisque;
@@ -40,7 +40,7 @@
 
 #calculate{
     width: 200px;
-    transform: translate(924px, -1740px);
+    transform: translate(924px, -1730px);
     height:50px;
     background-color: bisque;
     border-color: bisque;

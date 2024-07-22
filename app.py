@@ -3,8 +3,8 @@ import func
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
 
+@app.route('/', methods=['GET', 'POST'])
 
 def homepage():
     if request.method == 'POST':
@@ -210,7 +210,7 @@ def gpa():
 def email():
     if request.method == 'POST':
         autofill = ''
-        if request.form['email'] == 'admin':
+        if request.form['email'] == 'admin@gradepro.org':
             return redirect('/password', code=302)
         if request.form['submit'] == 'Create account':
             return redirect('/create-account', code=302)
@@ -254,7 +254,7 @@ def success():
 
 def password():
     if request.method == 'POST':
-        if request.form['password'] == 'admin':
+        if request.form['password'] == 'htmlcssflask':
             global username
             username = 'Admin'
             return redirect('/home', code=302)
