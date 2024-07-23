@@ -25,7 +25,7 @@ def hello():
     if request.method == 'POST':
         if request.form['submit'] == 'Back':
             return redirect('/home', code=302)
-        if request.form['submit'] == 'Gpa Calculator':
+        if request.form['submit'] == 'GPA Calculator':
             return redirect('/gpa', code=302)
         if request.form['submit'] == 'Grade Calculator':
             return render_template('gradecalc.html')
@@ -151,7 +151,7 @@ def gpa():
             return redirect('/home', code=302)
         if request.form['submit'] == 'Grade Calculator':
             return redirect('/Grade-Calculator', code=302)
-        if request.form['submit'] == 'Gpa Calculator':
+        if request.form['submit'] == 'GPA Calculator':
             return render_template('gpa.html')
         grade1 = str(request.form['firstrow'])
         value1 = grade1
